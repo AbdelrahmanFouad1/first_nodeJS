@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AbdelrahmanFouad1/first_nodeJS/issues"
   },
-  "homepage": "https://github.com/AbdelrahmanFouad1/first_nodeJS#readme"
+  "homepage": "https://github.com/AbdelrahmanFouad1/first_nodeJS#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
