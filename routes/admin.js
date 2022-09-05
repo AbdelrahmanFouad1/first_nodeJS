@@ -11,13 +11,19 @@ const products = [];
 // /admin/add-product => GET
 router.get('/add-product', (req, res, next) => {
     // res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
-    res.render('add_product', {pageTitle: 'Add Product', path: '/admin/add-product'});
+    res.render('add_product', {
+        pageTitle: 'Add Product',
+        path: '/admin/add-product',
+        formCss: true,
+        productCss: true,
+        activeAddProduct: true
+    });
 });
 
 // /admin/add-product => POST
 router.post('/add-product', (req, res, next) => {
     // console.log(req.body);
-    products.push({title: req.body.title});
+    products.push({ title: req.body.title });
     res.redirect('/');
 });
 
